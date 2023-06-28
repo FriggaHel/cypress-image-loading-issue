@@ -1,7 +1,7 @@
 context('Actions', () => {
   it('.visit', () => {
     cy.visit('https://smartpath.myalexandertoyota.com/inventory?dealerCd=02037&source=t3&zipcode=85365&type=new')
-    cy.wait(10000);
+    cy.wait(60000);
 
     cy.screenshot('02');
     cy.get('div.mat-form-field-infix').click();
