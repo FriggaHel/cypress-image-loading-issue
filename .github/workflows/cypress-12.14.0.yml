@@ -3,7 +3,6 @@ name: cypress@12.14.0
 on:
   push:
     branches:
-      - main
 
 jobs:
   main:
