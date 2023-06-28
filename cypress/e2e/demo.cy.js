@@ -4,7 +4,7 @@ context('Actions', () => {
     cy.wait(10000);
 
     cy.screenshot('02', {
-      capture: 'fullpage',
+      capture: 'fullPage',
     });
     cy.wait(10000);
   });
