@@ -7,8 +7,8 @@ context('Actions', () => {
       capture: 'viewport',
     });
 
-    cy.get('button[data-aa-link-type-title="vehicles"]').first().click();
-    cy.get('div[class="vehicle-wrapper"]').first().click();
+    cy.get('button[data-aa-link-type-title="vehicles"]').first().click({ force: true });
+    cy.get('div[class="vehicle-wrapper"]').first().click({ force: true });
     cy.wait(10000);
     cy.screenshot('03', {
       capture: 'viewport',
