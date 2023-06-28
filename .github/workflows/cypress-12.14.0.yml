@@ -1,0 +1,26 @@
+name: cypress@12.14.0
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  main:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      - name: Run cypress
+        run: |
+          npx cypress run --headed -b webkit
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: videos-macos-cypress12
+          path: |
+            cypress/videos/*.cy.js.mp4
+            cypress/videos/*.mov
