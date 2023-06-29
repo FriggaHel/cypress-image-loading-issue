@@ -3,10 +3,16 @@ context('Actions', () => {
     cy.visit('https://smartpath.myalexandertoyota.com/inventory?dealerCd=02037&source=t3&zipcode=85365&type=new')
     cy.wait(10000);
 
-    cy.scrollTo(0, 500);
+    cy.scrollTo(0, 1000);
     cy.wait(10000);
 
-    cy.scrollTo(0, 1000);
+    cy.scrollTo(0, 2000);
+    cy.wait(10000);
+
+    cy.scrollTo(0, 3000);
+    cy.wait(10000);
+
+    cy.scrollTo(0, 4000);
     cy.wait(10000);
 
     cy.get('div.mat-form-field-infix').click();
