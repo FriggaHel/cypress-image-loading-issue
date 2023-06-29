@@ -19,6 +19,6 @@ import './commands'
 // require('./commands')
 // require('cypress-terminal-report/src/installLogsCollector')();
 
-cy.on('uncaught:exception', (err, runnable) => {
-  cy.log('Client Exception', err, runnable);
-});
+// cy.on('uncaught:exception', (err, runnable) => {
+//   cy.log('Client Exception', err, runnable);
+// });
