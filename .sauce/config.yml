@@ -33,7 +33,12 @@ suites:
     platformName: "Windows 11"
     config:
       specPattern: [ "cypress/e2e/**/*.cy.js" ]
-
+  - name: "Cypress/Wekbit/macOS 12 - Toyota Bug - Scrolling"
+    browser: "webkit"
+    shard: spec
+    platformName: "macOS 12"
+    config:
+      specPattern: [ "cypress/e2e/scroll.cy.js" ]
 # Controls what artifacts to fetch when the suites have finished.
 artifacts:
   download:
